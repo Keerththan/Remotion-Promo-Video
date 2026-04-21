@@ -1,0 +1,26 @@
+{
+  "name": "coffee-brand-motion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "5-second Remotion motion graphic for a coffee brand",
+  "scripts": {
+    "dev": "remotion studio",
+    "studio": "remotion studio",
+    "compositions": "remotion compositions",
+    "render": "remotion render coffee-brand out/coffee-brand.mp4",
+    "still": "remotion still coffee-brand out/coffee-brand-frame30.png --frame=30 --scale=0.5",
+    "render:mindful": "remotion render mindfulspace-demo out/mindfulspace-demo.mp4",
+    "still:mindful": "remotion still mindfulspace-demo out/mindfulspace-demo-frame450.png --frame=450 --scale=0.5",
+    "render:sparengine": "remotion render sparengine-promo out/sparengine-promo.mp4",
+    "still:sparengine": "remotion still sparengine-promo out/sparengine-promo-frame30.png --frame=30 --scale=0.5",
+    "render:zelios": "remotion render zelios-dashboard out/zelios-dashboard.mp4",
+    "still:zelios": "remotion still zelios-dashboard out/zelios-dashboard-frame.png --frame=150 --scale=0.5"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.448",
+    "@remotion/google-fonts": "4.0.448",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.448"
+  }
+}
