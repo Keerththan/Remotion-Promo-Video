@@ -8,7 +8,8 @@ import {
   useVideoConfig,
   staticFile,
   Img,
-  spring
+  spring,
+  Audio
 } from 'remotion';
 import {loadFont} from '@remotion/google-fonts/Inter';
 
@@ -475,6 +476,15 @@ export const SparenginePromoComposition: React.FC = () => {
   
   return (
     <AbsoluteFill style={{backgroundColor: C.bg, fontFamily}}>
+      {/* 
+        Placeholder Background Music 
+        To use your own track, place 'bgm.mp3' in the public folder and change src to: staticFile('bgm.mp3')
+      */}
+      <Audio 
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" 
+        volume={0.3} 
+      />
+
       <Sequence from={0} durationInFrames={3 * fps}>
         <Scene1 />
       </Sequence>
